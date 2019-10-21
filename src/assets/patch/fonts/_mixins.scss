@@ -1,0 +1,29 @@
+@import "variables";
+
+
+@mixin font-face($name, $weight, $path, $file) {
+	@font-face {
+		font-family: $name;
+		font-style: normal;
+		font-weight: $weight;
+		src: url("#{$path}/#{$file}") format('woff');
+		font-display: swap;
+	}
+}
+
+@mixin font-regular() {
+	@include font-face($font-name, $font-regular_weight, $font-path, $font-regular_file);
+}
+@mixin font-light() {
+	@include font-face($font-name, $font-light_weight, $font-path, $font-light_file);
+}
+@mixin font-bold() {
+	@include font-face($font-name, $font-bold_weight, $font-path, $font-bold_file);
+}
+
+
+@mixin font-init() {
+	@include font-regular;
+	@include font-light;
+	@include font-bold;
+}

@@ -1,0 +1,22 @@
+@import "config";
+@import "mixins";
+
+html[dir="rtl"] {
+
+	// Body =======================================================================
+	body {
+		font-family: $font-name, $font-family-base;
+		text-align: right;
+	}
+	// Dropdown Toggle =======================================================================
+	.btn.dropdown-toggle:after, .nav-link.dropdown-toggle:after {
+		@include reverse-left-margin(.5rem);
+	}
+	// Material Font =======================================================================
+	[class^="mat-"] {
+		:not(.mat-icon):not(.la) {
+			font-family: $font-name, $font-family-base;
+		}
+	}
+
+}

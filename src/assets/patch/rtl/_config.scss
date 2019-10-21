@@ -1,0 +1,23 @@
+////////////////////////////////////////////////////////////////
+///////////// DO NOT MODIFY BELOW INCLUDE ORDER ////////////////
+////////////////////////////////////////////////////////////////
+
+// 1: Include global config
+@import "../../sass/config";
+
+// 2: Bootstrap framework includes
+@import "../../sass/global/integration/frameworks/bootstrap/variables";
+
+// 3: Layout config
+@import "../../sass/global/layout/config";
+@import "../../sass/global/layout/header/config";
+@import "../../sass/global/layout/brand/config";
+@import "../../sass/global/layout/aside/config";
+@import "../../sass/global/layout/footer/config";
+
+////////////////////////////////////////////////////////////////
+///////////// DO NOT MODIFY ABOVE INCLUDE ORDER ////////////////
+////////////////////////////////////////////////////////////////
+
+// 4: Persian Font
+@import "../fonts/fonts";

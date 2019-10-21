@@ -1,0 +1,31 @@
+// Patch Stylesheet
+
+////////////////////////////////////////////////////////////////
+///////////// DO NOT MODIFY BELOW INCLUDE ORDER ////////////////
+////////////////////////////////////////////////////////////////
+
+// 1: Include global config
+@import "../sass/config";
+
+// 2: Bootstrap framework includes
+@import "../sass/global/integration/frameworks/bootstrap/variables";
+
+// 3: Layout config
+@import "../sass/global/layout/config";
+@import "../sass/global/layout/header/config";
+@import "../sass/global/layout/brand/config";
+@import "../sass/global/layout/aside/config";
+@import "../sass/global/layout/footer/config";
+
+////////////////////////////////////////////////////////////////
+///////////// DO NOT MODIFY ABOVE INCLUDE ORDER ////////////////
+////////////////////////////////////////////////////////////////
+
+// 4: Custom Style
+@import "custom/custom";
+
+// 5: Fix RTL Issue
+@import "rtl/rtl";
+
+// 6: Add developer custom styles
+@import "developer-style";
